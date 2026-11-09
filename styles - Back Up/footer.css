@@ -1,0 +1,21 @@
+/*======================================
+FOOTER
+======================================*/
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+footer p{
+
+    opacity:.8;
+
+}

@@ -1,0 +1,81 @@
+/*======================================
+SERVICIOS
+======================================*/
+
+.servicios{
+
+    padding:120px 0;
+
+    background:#f7f5f2;
+
+}
+
+.servicios h2{
+
+    text-align:center;
+
+    font-family:'Cinzel',serif;
+
+    font-size:50px;
+
+    color:#222;
+
+    margin-bottom:70px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    border:1px solid rgba(212,175,55,.15);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.card h3{
+
+    color:#c89b2d;
+
+    font-family:'Cinzel',serif;
+
+    font-size:28px;
+
+    margin-bottom:22px;
+
+}
+
+.card p{
+
+    color:#555;
+
+    line-height:1.9;
+
+}
