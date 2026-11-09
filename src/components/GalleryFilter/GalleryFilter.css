@@ -1,0 +1,162 @@
+/*======================================
+          FILTRO GALERÍA
+======================================*/
+
+.gallery-filter {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+    margin: 0 auto 55px;
+}
+
+
+/*======================================
+              BOTONES
+======================================*/
+
+.gallery-filter > button {
+    appearance: none;
+    -webkit-appearance: none;
+
+    min-width: 175px;
+
+    padding: 15px 28px;
+
+    margin: 0;
+
+    border: 1px solid #d8cfc2;
+    border-radius: 999px;
+
+    background: #fffdf9;
+
+    color: #252525;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    box-shadow: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/*======================================
+                HOVER
+======================================*/
+
+.gallery-filter > button:hover {
+    background: #faf6ed;
+
+    border-color: #d4af37;
+
+    color: #9c7518;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 25px rgba(90, 65, 30, 0.12);
+}
+
+
+/*======================================
+            BOTÓN ACTIVO
+======================================*/
+
+.gallery-filter > button.activo {
+    background: #172b43;
+
+    border-color: #d4af37;
+
+    color: #d4af37;
+
+    box-shadow: 0 12px 30px rgba(23, 43, 67, 0.18);
+}
+
+
+.gallery-filter > button.activo:hover {
+    background: #172b43;
+
+    border-color: #d4af37;
+
+    color: #f0c94d;
+}
+
+
+/*======================================
+                TABLET
+======================================*/
+
+@media (max-width: 900px) {
+
+    .gallery-filter {
+        gap: 12px;
+
+        margin-bottom: 50px;
+    }
+
+    .gallery-filter > button {
+        min-width: 150px;
+
+        padding: 14px 22px;
+    }
+
+}
+
+
+/*======================================
+                MÓVIL
+======================================*/
+
+@media (max-width: 768px) {
+
+    .gallery-filter {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+
+        margin-bottom: 45px;
+    }
+
+    .gallery-filter > button {
+        width: 100%;
+        min-width: 0;
+
+        padding: 14px 10px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+/*======================================
+          MÓVIL PEQUEÑO
+======================================*/
+
+@media (max-width: 390px) {
+
+    .gallery-filter {
+        grid-template-columns: 1fr;
+    }
+
+}

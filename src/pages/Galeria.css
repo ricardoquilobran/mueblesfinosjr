@@ -1,0 +1,358 @@
+/*======================================
+          PORTADA GALERIA
+======================================*/
+
+.galeria-portada{
+    position:relative;
+
+    min-height:500px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:150px 30px 90px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4eee5 0%,
+            #fbf8f3 45%,
+            #eee2d2 100%
+        );
+
+    overflow:hidden;
+
+    text-align:center;
+}
+
+
+/*======================================
+        LUZ CALIDA DECORATIVA
+======================================*/
+
+.galeria-portada::before{
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:400px;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:radial-gradient(
+        ellipse,
+        rgba(139,94,60,.16) 0%,
+        rgba(178,138,46,.08) 40%,
+        transparent 72%
+    );
+
+    filter:blur(25px);
+}
+
+
+/*======================================
+        DETALLES LATERALES
+======================================*/
+
+.galeria-portada::after{
+    content:"";
+
+    position:absolute;
+
+    width:65%;
+    height:1px;
+
+    bottom:55px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        rgba(178,138,46,.5),
+        transparent
+    );
+}
+
+
+/* OCULTAMOS EL BRILLO NEGRO ANTERIOR */
+
+.galeria-portada-brillo{
+    display:none;
+}
+
+
+/*======================================
+             CONTENIDO
+======================================*/
+
+.galeria-portada-content{
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+    max-width:950px;
+}
+
+
+.galeria-portada-content span{
+    display:block;
+
+    margin-bottom:28px;
+
+    color:#a77b27;
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:13px;
+    font-weight:600;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+}
+
+
+/*======================================
+                TITULO
+======================================*/
+
+.galeria-portada h1{
+    margin:0;
+
+    color:#2f2118;
+
+    font-family:"Cinzel",serif;
+
+    font-size:clamp(55px,6vw,82px);
+
+    font-weight:500;
+
+    line-height:1.1;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/*======================================
+            LINEA DORADA
+======================================*/
+
+.galeria-portada-linea{
+    position:relative;
+
+    width:90px;
+    height:1px;
+
+    margin:35px auto;
+
+    background:#b28a2e;
+}
+
+
+.galeria-portada-linea::before,
+.galeria-portada-linea::after{
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    width:5px;
+    height:5px;
+
+    background:#b28a2e;
+
+    transform:translateY(-50%) rotate(45deg);
+}
+
+
+.galeria-portada-linea::before{
+    left:-12px;
+}
+
+
+.galeria-portada-linea::after{
+    right:-12px;
+}
+
+
+/*======================================
+                TEXTO
+======================================*/
+
+.galeria-portada p{
+    max-width:760px;
+
+    margin:0 auto;
+
+    color:#65564b;
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:19px;
+
+    line-height:1.9;
+}
+
+
+/*======================================
+          CONTENIDO GALERIA
+======================================*/
+
+.galeria-contenido{
+    padding:110px 0 120px;
+
+    background:#fffdf9;
+}
+
+
+/*======================================
+           INTRODUCCION
+======================================*/
+
+.galeria-introduccion{
+    max-width:900px;
+
+    margin:0 auto 65px;
+
+    text-align:center;
+}
+
+
+.galeria-introduccion span{
+    display:block;
+
+    margin-bottom:20px;
+
+    color:#a77b27;
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:13px;
+    font-weight:600;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+}
+
+
+.galeria-introduccion h2{
+    margin:0 0 25px;
+
+    color:#2f2118;
+
+    font-family:"Cinzel",serif;
+
+    font-size:48px;
+    font-weight:500;
+
+    line-height:1.25;
+
+    text-transform:uppercase;
+}
+
+
+.galeria-introduccion p{
+    max-width:720px;
+
+    margin:0 auto;
+
+    color:#65564b;
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:18px;
+
+    line-height:1.8;
+}
+
+
+/*======================================
+                MOVIL
+======================================*/
+
+@media(max-width:768px){
+
+    .galeria-portada{
+        min-height:430px;
+
+        padding:120px 22px 75px;
+    }
+
+
+    .galeria-portada::before{
+        width:400px;
+        height:320px;
+    }
+
+
+    .galeria-portada::after{
+        width:75%;
+
+        bottom:38px;
+    }
+
+
+    .galeria-portada-content span{
+        margin-bottom:22px;
+
+        font-size:11px;
+
+        letter-spacing:3px;
+    }
+
+
+    .galeria-portada h1{
+        font-size:39px;
+    }
+
+
+    .galeria-portada-linea{
+        width:60px;
+
+        margin:28px auto;
+    }
+
+
+    .galeria-portada p{
+        max-width:360px;
+
+        font-size:15px;
+
+        line-height:1.75;
+    }
+
+
+    .galeria-contenido{
+        padding:75px 0 85px;
+    }
+
+
+    .galeria-introduccion{
+        margin-bottom:50px;
+
+        padding:0 15px;
+    }
+
+
+    .galeria-introduccion h2{
+        font-size:31px;
+    }
+
+
+    .galeria-introduccion p{
+        font-size:15px;
+    }
+
+}

@@ -1,0 +1,218 @@
+/*======================================
+          FONDO DEL MODAL
+======================================*/
+
+.gallery-modal-overlay{
+    position:fixed;
+
+    inset:0;
+
+    z-index:9999;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:70px 30px 40px;
+
+    background:rgba(0,0,0,.92);
+
+    overflow-y:auto;
+}
+
+
+/*======================================
+              MODAL
+======================================*/
+
+.gallery-modal{
+    position:relative;
+
+    width:min(1100px, 92vw);
+
+    margin:auto;
+
+    text-align:center;
+}
+
+
+/*======================================
+          BOTON CERRAR
+======================================*/
+
+.gallery-modal-close{
+    position:absolute;
+
+    top:-50px;
+    right:0;
+
+    padding:0;
+
+    background:none;
+
+    border:none;
+
+    color:#ffffff;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    transition:transform .25s ease;
+}
+
+
+.gallery-modal-close:hover{
+    transform:scale(1.15);
+}
+
+
+/*======================================
+              TITULO
+======================================*/
+
+.gallery-modal h2{
+    margin:0 0 25px;
+
+    color:#ffffff;
+
+    font-family:"Cinzel",serif;
+
+    font-size:32px;
+
+    font-weight:500;
+}
+
+
+/*======================================
+              VISOR
+======================================*/
+
+.gallery-modal-viewer{
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:30px;
+}
+
+
+/*======================================
+              IMAGEN
+======================================*/
+
+.gallery-modal-image{
+    display:block;
+
+    width:auto;
+    height:auto;
+
+    max-width:78vw;
+    max-height:72vh;
+
+    object-fit:contain;
+
+    border-radius:10px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.5);
+}
+
+
+/*======================================
+              FLECHAS
+======================================*/
+
+.gallery-modal-arrow{
+    flex-shrink:0;
+
+    padding:10px;
+
+    background:none;
+
+    border:none;
+
+    color:#ffffff;
+
+    font-size:48px;
+
+    cursor:pointer;
+
+    transition:transform .25s ease;
+}
+
+
+.gallery-modal-arrow:hover{
+    transform:scale(1.18);
+}
+
+
+/*======================================
+              CONTADOR
+======================================*/
+
+.gallery-modal-counter{
+    margin:25px 0 0;
+
+    color:#ffffff;
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:16px;
+}
+
+
+/*======================================
+              MOVIL
+======================================*/
+
+@media(max-width:768px){
+
+    .gallery-modal-overlay{
+        padding:80px 15px 30px;
+    }
+
+    .gallery-modal{
+        width:100%;
+    }
+
+    .gallery-modal-close{
+        top:-55px;
+
+        right:10px;
+
+        font-size:30px;
+    }
+
+    .gallery-modal h2{
+        margin-bottom:20px;
+
+        font-size:24px;
+    }
+
+    .gallery-modal-viewer{
+        gap:8px;
+    }
+
+    .gallery-modal-image{
+        max-width:78vw;
+
+        max-height:65vh;
+    }
+
+    .gallery-modal-arrow{
+        padding:4px;
+
+        font-size:28px;
+    }
+
+    .gallery-modal-counter{
+        margin-top:20px;
+
+        font-size:14px;
+    }
+
+}

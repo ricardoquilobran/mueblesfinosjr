@@ -1,0 +1,19 @@
+.service-icon{
+
+    font-size:64px;
+
+    margin-bottom:30px;
+
+    transition:.35s;
+
+    color:#8b5e3c;
+
+    user-select:none;
+
+}
+
+.feature-card:hover .service-icon{
+
+    transform:scale(1.08);
+
+}

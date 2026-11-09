@@ -1,0 +1,135 @@
+/*======================================
+CONTACTO
+======================================*/
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    margin:70px 0 90px;
+
+}
+
+.contact-card{
+
+    background:#fbf8f3;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.contact-card h3{
+
+    font-family:'Cinzel',serif;
+
+    font-size:28px;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+.contact-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/*======================================
+PREGUNTAS FRECUENTES
+======================================*/
+
+.faq-lista{
+
+    max-width:900px;
+
+    margin:70px auto;
+
+}
+
+.faq-bloque{
+
+    padding:35px 0;
+
+    border-bottom:1px solid #ddd5ca;
+
+}
+
+.faq-bloque:last-child{
+
+    border-bottom:none;
+
+}
+
+.faq-bloque h3{
+
+    font-family:'Cinzel',serif;
+
+    font-size:30px;
+
+    color:#222;
+
+    margin-bottom:18px;
+
+}
+
+.faq-bloque p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+@media(max-width:768px){
+
+.contact-card{
+
+padding:28px;
+
+}
+
+.contact-card h3{
+
+font-size:24px;
+
+}
+
+.faq-bloque h3{
+
+font-size:24px;
+
+}
+
+.faq-bloque p{
+
+font-size:17px;
+
+}
+
+}

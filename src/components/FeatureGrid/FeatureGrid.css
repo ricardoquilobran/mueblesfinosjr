@@ -1,0 +1,286 @@
+/*======================================
+              FEATURE GRID
+======================================*/
+
+.feature-grid{
+    width:100%;
+
+    max-width:1100px;
+
+    margin:0 auto;
+}
+
+
+/*======================================
+              LISTA
+======================================*/
+
+.feature-grid-lista{
+    width:100%;
+
+    border-top:1px solid rgba(23,43,67,.18);
+}
+
+
+/*======================================
+              ITEM
+======================================*/
+
+.feature-item{
+    display:grid;
+
+    grid-template-columns:120px 1fr;
+
+    align-items:center;
+
+    min-height:145px;
+
+    padding:34px 20px;
+
+    border-bottom:1px solid rgba(23,43,67,.18);
+
+    transition:
+        padding-left .35s ease,
+        background .35s ease;
+}
+
+
+.feature-item:hover{
+    padding-left:35px;
+
+    background:rgba(212,175,55,.04);
+}
+
+
+/*======================================
+              NUMERO
+======================================*/
+
+.feature-numero{
+    color:#b28a2e;
+
+    font-family:"Cinzel",serif;
+
+    font-size:38px;
+
+    font-weight:400;
+
+    letter-spacing:2px;
+}
+
+
+/*======================================
+              CONTENIDO
+======================================*/
+
+.feature-contenido{
+    display:grid;
+
+    grid-template-columns:minmax(260px, 350px) 1fr;
+
+    align-items:center;
+
+    gap:50px;
+}
+
+
+.feature-contenido h3{
+    margin:0;
+
+    color:#172b43;
+
+    font-family:"Cinzel",serif;
+
+    font-size:24px;
+
+    font-weight:500;
+
+    line-height:1.4;
+
+    letter-spacing:.5px;
+
+    text-transform:uppercase;
+}
+
+
+.feature-contenido p{
+    max-width:560px;
+
+    margin:0;
+
+    color:#555555;
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:16px;
+
+    font-weight:400;
+
+    line-height:1.8;
+}
+
+
+/*======================================
+              ENLACE
+======================================*/
+
+.feature-footer{
+    display:flex;
+
+    justify-content:center;
+
+    padding-top:50px;
+}
+
+
+.feature-enlace{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:12px 4px;
+
+    color:#172b43;
+
+    border-bottom:1px solid #b28a2e;
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    transition:
+        color .3s ease,
+        gap .3s ease;
+}
+
+
+.feature-enlace span{
+    color:#b28a2e;
+
+    font-size:22px;
+}
+
+
+.feature-enlace:hover{
+    color:#b28a2e;
+
+    gap:27px;
+}
+
+
+/*======================================
+              TABLET
+======================================*/
+
+@media(max-width:1024px){
+
+    .feature-grid{
+        max-width:900px;
+    }
+
+
+    .feature-item{
+        grid-template-columns:90px 1fr;
+    }
+
+
+    .feature-contenido{
+        grid-template-columns:280px 1fr;
+
+        gap:35px;
+    }
+
+}
+
+
+/*======================================
+              MOVIL
+======================================*/
+
+@media(max-width:768px){
+
+    .feature-item{
+        grid-template-columns:65px 1fr;
+
+        align-items:start;
+
+        min-height:auto;
+
+        padding:30px 5px;
+    }
+
+
+    .feature-item:hover{
+        padding-left:5px;
+
+        background:transparent;
+    }
+
+
+    .feature-numero{
+        font-size:27px;
+    }
+
+
+    .feature-contenido{
+        display:block;
+    }
+
+
+    .feature-contenido h3{
+        margin-bottom:14px;
+
+        font-size:20px;
+    }
+
+
+    .feature-contenido p{
+        font-size:15px;
+
+        line-height:1.75;
+    }
+
+
+    .feature-footer{
+        padding-top:40px;
+    }
+
+
+    .feature-enlace{
+        font-size:11px;
+
+        letter-spacing:1.4px;
+    }
+
+}
+
+
+/*======================================
+          MOVIL PEQUEÑO
+======================================*/
+
+@media(max-width:390px){
+
+    .feature-item{
+        grid-template-columns:55px 1fr;
+    }
+
+
+    .feature-numero{
+        font-size:23px;
+    }
+
+
+    .feature-contenido h3{
+        font-size:18px;
+    }
+
+}

@@ -1,0 +1,21 @@
+.historia-texto{
+
+max-width:900px;
+
+margin:0 auto 70px;
+
+}
+
+.historia-texto p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:28px;
+
+color:#555;
+
+text-align:justify;
+
+}

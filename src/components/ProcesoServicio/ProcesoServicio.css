@@ -1,0 +1,341 @@
+/*======================================
+          PROCESO SERVICIO
+======================================*/
+
+.proceso-servicio{
+    width:100%;
+    padding:110px 0 120px;
+    background:#f8f6f2;
+}
+
+.proceso-servicio-container{
+    width:100%;
+    max-width:1500px;
+    margin:0 auto;
+    padding:0 50px;
+}
+
+
+/*======================================
+            ENCABEZADO
+======================================*/
+
+.proceso-servicio-encabezado{
+    max-width:900px;
+    margin:0 auto 85px;
+    text-align:center;
+}
+
+.proceso-servicio-subtitulo{
+    display:block;
+    margin-bottom:18px;
+
+    color:#b28a2e;
+
+    font-family:"Montserrat",sans-serif;
+    font-size:14px;
+    font-weight:600;
+
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.proceso-servicio-encabezado h2{
+    margin:0 0 24px;
+
+    color:#172b43;
+
+    font-family:"Cinzel",serif;
+    font-size:48px;
+    font-weight:500;
+
+    line-height:1.2;
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+}
+
+.proceso-servicio-encabezado p{
+    margin:0;
+
+    color:#555;
+
+    font-family:"Montserrat",sans-serif;
+    font-size:18px;
+
+    line-height:1.8;
+}
+
+
+/*======================================
+          LINEA DEL PROCESO
+======================================*/
+
+.proceso-servicio-linea{
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap:35px;
+}
+
+
+/* LINEA DORADA */
+
+.proceso-servicio-linea::before{
+    content:"";
+
+    position:absolute;
+
+    top:36px;
+
+    left:calc(
+        (100% / var(--cantidad-pasos, 4)) / 2
+    );
+
+    right:calc(
+        (100% / var(--cantidad-pasos, 4)) / 2
+    );
+
+    height:1px;
+
+    background:#d4af37;
+
+    z-index:0;
+}
+
+
+/*======================================
+              PASOS
+======================================*/
+
+.proceso-servicio-paso{
+    position:relative;
+
+    z-index:1;
+
+    text-align:center;
+}
+
+.proceso-servicio-numero{
+    position:relative;
+
+    z-index:2;
+
+    width:74px;
+    height:74px;
+
+    margin:0 auto 30px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border:2px solid #d4af37;
+
+    border-radius:50%;
+
+    background:#080808;
+
+    color:#d4af37;
+
+    font-family:"Cinzel",serif;
+
+    font-size:27px;
+    font-weight:500;
+}
+
+.proceso-servicio-paso h3{
+    min-height:58px;
+
+    margin:0 0 16px;
+
+    color:#171717;
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:18px;
+    font-weight:600;
+
+    line-height:1.5;
+}
+
+.proceso-servicio-paso p{
+    max-width:240px;
+
+    margin:0 auto;
+
+    color:#555;
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:16px;
+
+    line-height:1.8;
+}
+
+
+/*======================================
+              TABLET
+======================================*/
+
+@media(max-width:1024px){
+
+    .proceso-servicio{
+        padding:90px 0;
+    }
+
+    .proceso-servicio-container{
+        padding:0 30px;
+    }
+
+    .proceso-servicio-linea{
+        grid-template-columns:repeat(2, 1fr);
+
+        gap:60px 35px;
+    }
+
+    .proceso-servicio-linea::before{
+        display:none;
+    }
+
+    .proceso-servicio-encabezado h2{
+        font-size:40px;
+    }
+
+}
+
+
+/*======================================
+              MOVIL
+======================================*/
+
+@media(max-width:768px){
+
+    .proceso-servicio{
+        padding:75px 0 85px;
+    }
+
+    .proceso-servicio-container{
+        padding:0 22px;
+    }
+
+    .proceso-servicio-encabezado{
+        margin-bottom:60px;
+    }
+
+    .proceso-servicio-subtitulo{
+        font-size:12px;
+        letter-spacing:2px;
+    }
+
+    .proceso-servicio-encabezado h2{
+        font-size:31px;
+    }
+
+    .proceso-servicio-encabezado p{
+        font-size:16px;
+    }
+
+
+    /* LINEA VERTICAL */
+
+    .proceso-servicio-linea{
+        display:flex;
+
+        flex-direction:column;
+
+        gap:0;
+    }
+
+    .proceso-servicio-linea::before{
+        display:block;
+
+        top:35px;
+        bottom:70px;
+
+        left:35px;
+        right:auto;
+
+        width:1px;
+        height:auto;
+
+        background:#d4af37;
+    }
+
+
+    /* PASOS */
+
+    .proceso-servicio-paso{
+        min-height:190px;
+
+        padding:0 0 50px 100px;
+
+        text-align:left;
+    }
+
+    .proceso-servicio-numero{
+        position:absolute;
+
+        top:0;
+        left:0;
+
+        width:70px;
+        height:70px;
+
+        margin:0;
+
+        font-size:24px;
+    }
+
+    .proceso-servicio-paso h3{
+        min-height:auto;
+
+        margin-bottom:12px;
+
+        font-size:18px;
+    }
+
+    .proceso-servicio-paso p{
+        max-width:none;
+
+        margin:0;
+
+        font-size:15px;
+
+        line-height:1.75;
+    }
+
+}
+
+
+/*======================================
+          MOVIL PEQUEÑO
+======================================*/
+
+@media(max-width:390px){
+
+    .proceso-servicio-encabezado h2{
+        font-size:27px;
+    }
+
+    .proceso-servicio-paso{
+        padding-left:88px;
+    }
+
+    .proceso-servicio-numero{
+        width:62px;
+        height:62px;
+
+        font-size:21px;
+    }
+
+    .proceso-servicio-linea::before{
+        left:31px;
+    }
+
+}
